@@ -12,3 +12,14 @@ class employee(models.Model):
 	
 	def __str__(self):
 		return self.firstname
+		
+class student(models.Model):
+	sid = phone = models.CharField(max_length=10)
+	firstname = models.CharField(max_length=40)
+	lastname = models.CharField(max_length=40)
+	email = models.CharField(max_length=40)
+	phone = models.CharField(max_length=40)
+	username = models.CharField(max_length=40)
+	
+	def __str__(self):
+		return self.firstname		
