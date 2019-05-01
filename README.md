@@ -1,2 +1,6 @@
+
 # tsf-
-this is rest framework using django
+This is REST api using django.
+django
+django rest framework
+
