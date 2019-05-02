@@ -6,8 +6,8 @@ from myapp import views
 
 router = routers.DefaultRouter()
 router.register(r'employee', views.employeeViewSet)
-router.register(r'employee', views.studentViewSet)
-router.register(r'employee', views.teacherViewSet)
+router.register(r'student', views.studentViewSet)
+router.register(r'teacher', views.teacherViewSet)
 router.register(r'user', views.UserViewSet)
 
 # Wire up our API using automatic URL routing.
@@ -15,7 +15,6 @@ router.register(r'user', views.UserViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', )
     path('api/', include(router.urls)),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]
