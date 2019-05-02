@@ -1,0 +1,125 @@
+
+****Demonstrating the 4 REST api usning Django webapp.****
+
+#Technology used:
+1. Django 
+2. Django REST framework  
+3. MySQL/XAMPP.
+
+
+#Installation:
+
+
+
+1. Install virtual environment
+
+sudo apt install python-virtualenv
+
+
+
+2. Setup virtual environment with python 3.6+
+
+virtualenv venv -p python3
+
+
+
+3. Install python dependencies
+pip 
+install -r requirements.txt
+
+
+
+4. Migrate database
+
+python manage.py migrate
+
+
+
+5. Run server
+
+python manage.py runserver 8000
+
+
+
+6. Test on browser
+ http://localhost:8000
+
+
+
+
+#List of 4 API:
+1. Employee API
+2. Student API
+3. Teacher API
+4. User API
+
+
+
+# File structure of the project.
+
+tsf_phase2
+
+    DRF*_tsf
+    
+	|   DRF_tsf
+        
+	|   __init__.py
+
+        |   settings.py
+
+        |   urls.py
+
+        |   wsgi.py
+
+    |
+    
+    |   myapp
+
+        |   migrations
+
+        |   __init__.py
+
+        |   admin.py
+
+        |   apps.py
+
+        |   models.py
+
+        |   serializers.py
+
+        |   tests.py
+
+        |   views.py
+
+        |
+
+    |   manage.py
+
+
+
+#Steps:
+1. Start Apache and MySQL server from the xampp server.
+2. Start the server : python manage.pyrunserver
+3. Go to browser and http://localhost:8000
+/api
+
+4. API Testing using Django
+
+#For Employee API
+i. Click on "employee":"http://localhost:8000/api/employee/" link 
+ii. Showing CREATE, RETRIEVE, UPDATE AND DELETE 
+
+#For Student API
+i. Click on "student":"http://localhost:8000/api/student/" link 
+ii. Showing CREATE, RETRIEVE, UPDATE AND DELETE 
+
+#For Teacher API
+i. Click on "teacher":"http://localhost:8000/api/teacher/" link 
+ii. Showing CREATE, RETRIEVE, UPDATE AND DELETE 
+
+#For User API
+i. Click on "User":"http://localhost:8000/api/user/" link 
+ii. Showing CREATE, RETRIEVE, UPDATE AND DELETE 
+
+
+ 
