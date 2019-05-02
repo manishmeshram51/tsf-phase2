@@ -75,5 +75,5 @@ ii. Showing CREATE, RETRIEVE, UPDATE AND DELETE
 i. Click on "User":"http://localhost:8000/api/user/" link 
 ii. Showing CREATE, RETRIEVE, UPDATE AND DELETE 
 
-
+Thank YOU!!!!!!
  
