@@ -6,46 +6,25 @@
 2. Django REST framework  
 3. MySQL/XAMPP.
 
-
-#Installation:
-
-
+#Installation:
 
 1. Install virtual environment
-
 sudo apt install python-virtualenv
 
-
-
 2. Setup virtual environment with python 3.6+
-
 virtualenv venv -p python3
 
-
-
 3. Install python dependencies
-pip 
-install -r requirements.txt
-
-
+pip install -r requirements.txt
 
 4. Migrate database
-
 python manage.py migrate
 
-
-
 5. Run server
-
 python manage.py runserver 8000
 
-
-
 6. Test on browser
- http://localhost:8000
-
-
-
+http://localhost:8000
 
 #List of 4 API:
 1. Employee API
@@ -53,58 +32,33 @@ python manage.py runserver 8000
 3. Teacher API
 4. User API
 
-
-
 # File structure of the project.
-
 tsf_phase2
-
     DRF*_tsf
-    
-	|   DRF_tsf
-        
+	|   DRF_tsf        
 	|   __init__.py
-
         |   settings.py
-
         |   urls.py
-
         |   wsgi.py
-
     |
-    
     |   myapp
-
         |   migrations
-
         |   __init__.py
-
         |   admin.py
-
         |   apps.py
-
         |   models.py
-
         |   serializers.py
-
         |   tests.py
-
         |   views.py
-
         |
-
     |   manage.py
-
-
 
 #Steps:
 1. Start Apache and MySQL server from the xampp server.
 2. Start the server : python manage.pyrunserver
-3. Go to browser and http://localhost:8000
-/api
+3. Go to browser and http://localhost:8000/api
 
 4. API Testing using Django
-
 #For Employee API
 i. Click on "employee":"http://localhost:8000/api/employee/" link 
 ii. Showing CREATE, RETRIEVE, UPDATE AND DELETE 
