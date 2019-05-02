@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from myapp.models import employee, teacher, student
 from rest_framework import serializers
 
+
 class teacherSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = teacher
@@ -11,7 +12,7 @@ class teacherSerializer(serializers.HyperlinkedModelSerializer):
 
 class studentSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = employee
+        model = student
         fields = '__all__'
 
 
