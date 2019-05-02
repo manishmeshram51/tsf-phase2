@@ -20,6 +20,21 @@ class student(models.Model):
 	email = models.CharField(max_length=40)
 	phone = models.CharField(max_length=40)
 	username = models.CharField(max_length=40)
+	classs = models.CharField(max_length=40)
 	
 	def __str__(self):
 		return self.firstname		
+
+		
+class teacher(models.Model):
+	tid = phone = models.CharField(max_length=10)
+	firstname = models.CharField(max_length=40)
+	lastname = models.CharField(max_length=40)
+	email = models.CharField(max_length=40)
+	phone = models.CharField(max_length=40)
+	username = models.CharField(max_length=40)
+	subject = models.CharField(max_length=40)
+
+	def __str__(self):
+		return self.firstname		
+
