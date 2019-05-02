@@ -4,7 +4,7 @@
 This is REST api using django.
 django
 django rest framework
-xampp
+mysql/xampp
 
 # To copy the project, only copy the DRF_tsf
 
